@@ -12,6 +12,7 @@
 		52272186214B26C7002806A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52272184214B26C7002806A3 /* Main.storyboard */; };
 		52272188214B26C8002806A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52272187214B26C8002806A3 /* Assets.xcassets */; };
 		5227218B214B26C8002806A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52272189214B26C8002806A3 /* LaunchScreen.storyboard */; };
+		52DDD9722154610A009C8A52 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDD9712154610A009C8A52 /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		52272187214B26C8002806A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5227218A214B26C8002806A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5227218C214B26C8002806A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DDD9712154610A009C8A52 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				52272187214B26C8002806A3 /* Assets.xcassets */,
 				52272189214B26C8002806A3 /* LaunchScreen.storyboard */,
 				5227218C214B26C8002806A3 /* Info.plist */,
+				52DDD9712154610A009C8A52 /* RoundButton.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					5227217C214B26C7002806A3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -135,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52DDD9722154610A009C8A52 /* RoundButton.swift in Sources */,
 				52272183214B26C7002806A3 /* ViewController.swift in Sources */,
 				52272181214B26C7002806A3 /* AppDelegate.swift in Sources */,
 			);
@@ -283,13 +288,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7982SQHQ;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blankspace.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,13 +307,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7982SQHQ;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blankspace.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
