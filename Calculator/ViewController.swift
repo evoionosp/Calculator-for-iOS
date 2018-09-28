@@ -66,8 +66,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setToInit();
         
+        //Swipe result area left right will work as a backspace. (Same like built-in iOS calculator)
         var swipeGesture = UISwipeGestureRecognizer()
-        // Swipe (right and left)
+        
         let direction: [UISwipeGestureRecognizer.Direction] = [.left, .right]
         for dir in direction{
             swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeView(_:)))

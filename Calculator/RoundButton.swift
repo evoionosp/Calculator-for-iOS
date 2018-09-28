@@ -2,9 +2,10 @@
 //  RoundButton.swift
 //  Calculator
 //
-//  Created by Shubh Patel on 2018-09-20.
+//  Created by Shubh Patel on 2018-09-13.
 //  Copyright © 2018 Shubh Patel. All rights reserved.
-//
+//  STUDENT ID: 300977575
+//  MADE FOR: iPhone6/7/8 and iPhone X/XS
 import UIKit
 
 
