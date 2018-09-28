@@ -4,7 +4,8 @@
 //
 //  Created by Shubh Patel on 2018-09-13.
 //  Copyright © 2018 Shubh Patel. All rights reserved.
-//
+//  STUDENT ID: 300977575
+//  MADE FOR: iPhone6/7/8 and iPhone X/XS
 
 import UIKit
 
@@ -37,15 +38,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var windowView: UIView!
     @IBOutlet weak var resultArea: UILabel!
-    @IBOutlet weak var btnAC: RoundButton!
-    @IBOutlet weak var btnPluMin: RoundButton!
-    @IBOutlet weak var btnPer: RoundButton!
-    
-    @IBOutlet weak var btnPlus: RoundButton!
-    @IBOutlet weak var btnMin: RoundButton!
-    @IBOutlet weak var btnMul: RoundButton!
-    @IBOutlet weak var btnDiv: RoundButton!
-    @IBOutlet weak var btnEql: RoundButton!
+//    @IBOutlet weak var btnAC: RoundButton!
+//    @IBOutlet weak var btnPluMin: RoundButton!
+//    @IBOutlet weak var btnPer: RoundButton!
+//
+//    @IBOutlet weak var btnPlus: RoundButton!
+//    @IBOutlet weak var btnMin: RoundButton!
+//    @IBOutlet weak var btnMul: RoundButton!
+//    @IBOutlet weak var btnDiv: RoundButton!
+//    @IBOutlet weak var btnEql: RoundButton!
     
     var hasDot: Bool = false
     var isOperatorPressed: Bool = false
@@ -146,8 +147,14 @@ class ViewController: UIViewController {
     
     
     @IBAction func btnPlusMinusClick(_ sender: RoundButton) {
-        if(resultArea.text.cha == "-")
-        resultArea.text = "-" + resultArea.text!
+        if(resultArea.text?.prefix(1) != "-"){
+             resultArea.text = "-" + resultArea.text!
+        }
+        else{
+            resultArea.text = String((resultArea.text?.dropFirst())!)
+        }
+       // if(resultArea.text.cha == "-")
+       
     }
     
     
