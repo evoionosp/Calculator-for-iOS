@@ -146,7 +146,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func btnPlusMinusClick(_ sender: RoundButton) {
-        resultArea.text?.insert("-", at: resultArea.)
+        if(resultArea.text.cha == "-")
+        resultArea.text = "-" + resultArea.text!
+    }
+    
+    
+    @IBAction func btnPerClick(_ sender: RoundButton) {
+        resultArea.text = String(doubleRound(result: Double(resultArea.text!)!/100))
     }
     
     

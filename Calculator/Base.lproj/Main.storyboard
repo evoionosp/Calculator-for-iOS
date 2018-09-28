@@ -276,6 +276,9 @@
                                                 <real key="value" value="40"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnPerClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MA0-l4-KGi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bas-yy-dFO" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
                                         <rect key="frame" x="279" y="275" width="80" height="80"/>
